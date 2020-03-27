@@ -10,7 +10,7 @@ function App() {
         <Route exact path ='/'>
           <Home />
         </Route>
-        <Route path="/form" component={Form}/>
+        <Route path="/Pizza" component={Form}/>
     </div>
   );
 };
