@@ -1,16 +1,17 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import { Route} from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
 import Form from './Components/Form';
 
 function App() {
   return (
-    <Router>
+    <div className="App">
         <Route exact path ='/'>
           <Home />
         </Route>
-    </Router>
+        <Route path="/form" component={Form}/>
+    </div>
   );
 };
 export default App;
